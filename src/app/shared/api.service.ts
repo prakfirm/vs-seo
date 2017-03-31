@@ -32,7 +32,7 @@ export class ApiService {
 
     options = Object.assign({}, options, {headers});
 
-    return this._http.get(this.apiUrl + url, options)
+    return this._http.get('/assets/lang/en.json')
       .catch(err => {
         console.log('Error: ', err);
         return Observable.throw(err);
